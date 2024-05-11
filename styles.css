@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+.places-container-scroll {
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow-y: auto;
+}
+
+
+#popup {
+    width: 20vw;
+    height: 23vh;
+    text-align: center;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+#popup p{
+    font-size: 14px;
+    color: green;
+}
+
+
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.places-container {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    position: absolute;
+    padding-left: 10px;
+    background-color: #FCE09B;
+    height: 100vh;
+    width: 23vh;
+}
+
+.place {
+    width: 10vw;
+    height: 40px;
+    background-color: #B2533E;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 3px;
+    border: #e0c275 solid 4px;
+}
+
+.map-container {
+    padding-left: 20%;
+}
+
+/* Style the drop areas on the map */
+.drop-area {
+    fill: transparent;
+    stroke: #e74c3c;
+    stroke-width: 2;
+    cursor: pointer;
+}
+
+#score{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #186F65;
+    padding: 15px;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#timer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #445D48;
+    padding: 15px;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 12%;
+}
+
+/* CSS for the custom popup */
+#custom-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+#custom-popup h2 {
+    margin-top: 0;
+}
+#custom-popup button {
+    display: block;
+    margin-top: 10px;
+}
+
+
+#ybtn,#nbtn{
+    background-color: #3085C3;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%;
+    border: none;
+}
+
+
+#good{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+#bad{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
